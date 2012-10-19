@@ -1,0 +1,110 @@
+// dependencies
+
+@import 'reset';
+
+
+// colors
+
+$default: #182f3f;
+$highlight: #923244;
+$background: #ffffff;
+
+
+// types
+
+$helvetica: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+
+// styles
+
+.about {
+  width: 100%;
+  position: fixed;
+
+  h1 {
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.05em;
+    font-weight: bold;
+    font-family: $helvetica;
+    color: $default;
+
+    width: 50%;
+    margin: 75px 0 0 55px;
+
+    &::selection {
+      background: $highlight;
+    }
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: lighter;
+    font-family: $helvetica;
+    color: $default;
+
+    width: 50%;
+    margin: 40px 0 0 55px;
+
+    &::selection {
+      background: $highlight;
+    }
+
+    span {
+      font-weight: bold;
+      color: $highlight;
+
+      &::selection {
+        background: $highlight;
+        color: $background;
+      }
+    }
+  }
+
+  .email {
+    position: absolute;
+    top: 95px;
+    right: 55px;
+
+    img {
+      width: 40px;
+
+      transition: 0.3s ease;
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+
+      &:hover {
+        width: 50px;
+
+        transition: 0.3s ease;
+        -webkit-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+      }
+    }
+  }
+}
+
+.work {
+  width: 100%;
+  position: relative;
+  overflow: visible;
+
+  background: $background;
+
+  .shot {
+    float: left;
+
+    width: 25%;
+    height: 300 * 0.25;
+
+    background: url("../images/loader.gif") no-repeat center center;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
