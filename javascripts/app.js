@@ -6,7 +6,9 @@ $(document).ready(function() {
       $.each(data.shots, function(i, shot) {
         $('.work').append([
           '<div class="shot">',
-            '<img src="' + shot.image_url + '" />',
+            '<a href="' + shot.url + '" target="_blank">',
+              '<img src="' + shot.image_url + '" />',
+            '</a>',
           '</div>'
         ].join(''));
       });  
@@ -15,7 +17,7 @@ $(document).ready(function() {
 
   
   function setAboutHeight() {
-    var newHeight = $('.about').height() + 90;
+    var newHeight = $('.about').height() + 85;
 
     $('.clear').css('height', newHeight);
   };

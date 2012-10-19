@@ -34,6 +34,7 @@ $helvetica: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
     &::selection {
       background: $highlight;
+      color: $background;
     }
   }
 
@@ -49,6 +50,7 @@ $helvetica: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
     &::selection {
       background: $highlight;
+      color: $background;
     }
 
     span {
@@ -96,7 +98,6 @@ $helvetica: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
   .shot {
     float: left;
-
     width: 25%;
     height: 300 * 0.25;
 

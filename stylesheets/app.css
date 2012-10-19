@@ -48,7 +48,8 @@ table {
     width: 50%;
     margin: 75px 0 0 55px; }
     .about h1::selection {
-      background: #923244; }
+      background: #923244;
+      color: white; }
   .about h2 {
     font-size: 30px;
     line-height: 36px;
@@ -58,7 +59,8 @@ table {
     width: 50%;
     margin: 40px 0 0 55px; }
     .about h2::selection {
-      background: #923244; }
+      background: #923244;
+      color: white; }
     .about h2 span {
       font-weight: bold;
       color: #923244; }
