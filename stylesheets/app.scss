@@ -7,7 +7,8 @@
 
 $default: #182f3f;
 $highlight: #923244;
-$background: #ffffff;
+$top-background: #ffffff;
+$bottom-background: #1d1d1d;
 
 
 // types
@@ -34,7 +35,7 @@ $helvetica: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
     &::selection {
       background: $highlight;
-      color: $background;
+      color: $top-background;
     }
   }
 
@@ -50,7 +51,7 @@ $helvetica: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
     &::selection {
       background: $highlight;
-      color: $background;
+      color: $top-background;
     }
 
     span {
@@ -59,7 +60,7 @@ $helvetica: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
       &::selection {
         background: $highlight;
-        color: $background;
+        color: $top-background;
       }
     }
   }
@@ -94,7 +95,7 @@ $helvetica: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   position: relative;
   overflow: visible;
 
-  background: $background;
+  background: $bottom-background;
 
   .shot {
     float: left;
