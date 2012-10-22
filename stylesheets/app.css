@@ -87,7 +87,7 @@ table {
 .work {
   width: 100%;
   position: relative;
-  overflow: visible;
+  overflow: auto;
   background: #1d1d1d; }
   .work .shot {
     float: left;
