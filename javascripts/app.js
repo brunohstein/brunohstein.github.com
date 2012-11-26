@@ -17,7 +17,7 @@ $(document).ready(function() {
 
   
   function setAboutHeight() {
-    var newHeight = $('.about').height() + 85;
+    var newHeight = $('.about').height() + 95;
 
     $('.clear').css('height', newHeight);
   };
