@@ -5,108 +5,84 @@
 
 // colors
 
-$default: #182f3f;
-$highlight: #923244;
-$top-background: #ffffff;
-$bottom-background: #1d1d1d;
+$type: #ffedb8;
+$background: #3c444c;
 
 
 // types
 
-$helvetica: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+@font-face {
+  font-family: 'proxima_nova_thregular';
+  src: url('../fonts/proxima_nova_thin-webfont.eot');
+  src: url('../fonts/proxima_nova_thin-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/proxima_nova_thin-webfont.woff') format('woff'),
+       url('../fonts/proxima_nova_thin-webfont.ttf') format('truetype'),
+       url('../fonts/proxima_nova_thin-webfont.svg#proxima_nova_thregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_blregular';
+  src: url('../fonts/proxima_nova_black-webfont.eot');
+  src: url('../fonts/proxima_nova_black-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/proxima_nova_black-webfont.woff') format('woff'),
+       url('../fonts/proxima_nova_black-webfont.ttf') format('truetype'),
+       url('../fonts/proxima_nova_black-webfont.svg#proxima_nova_blregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$thin: 'proxima_nova_thregular';
+$black: 'proxima_nova_blregular';
 
 
 // styles
 
-.about {
-  width: 100%;
-  position: fixed;
-
-  h1 {
-    font-size: 60px;
-    line-height: 72px;
-    letter-spacing: -0.05em;
-    font-weight: bold;
-    font-family: $helvetica;
-    color: $default;
-
-    width: 50%;
-    margin: 75px 0 0 55px;
-
-    &::selection {
-      background: $highlight;
-      color: $top-background;
-    }
-  }
-
-  h2 {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: lighter;
-    font-family: $helvetica;
-    color: $default;
-
-    width: 50%;
-    margin: 40px 0 0 55px;
-
-    &::selection {
-      background: $highlight;
-      color: $top-background;
-    }
-
-    span {
-      font-weight: bold;
-      color: $highlight;
-
-      &::selection {
-        background: $highlight;
-        color: $top-background;
-      }
-    }
-  }
-
-  .email {
-    position: absolute;
-    top: 95px;
-    right: 55px;
-
-    img {
-      width: 40px;
-
-      transition: 0.3s ease;
-      -webkit-transition: 0.3s ease;
-      -moz-transition: 0.3s ease;
-      -o-transition: 0.3s ease;
-
-      &:hover {
-        width: 50px;
-
-        transition: 0.3s ease;
-        -webkit-transition: 0.3s ease;
-        -moz-transition: 0.3s ease;
-        -o-transition: 0.3s ease;
-      }
-    }
-  }
+body {
+  background: $background;
+  color: $type;
+  font-family: $thin;
+  font-size: 20px;
+  letter-spacing: -1px;
 }
 
-.work {
-  width: 100%;
-  position: relative;
-  overflow: auto;
+.center {
+  height: 260px;
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -130px 0 0 -225px;
+}
 
-  background: $bottom-background;
+h1 {
+  font-size: 60px;
+  letter-spacing: -3px;
+  font-family: $black;
+  text-transform: uppercase;
+}
 
-  .shot {
-    float: left;
-    width: 25%;
-    height: 300 * 0.25;
+.social {
+  margin: 40px 0 0;
 
-    background: url("../images/loader.gif") no-repeat center center;
+  li {
+    margin: 10px 0;
+    text-transform: lowercase;
 
-    img {
-      width: 100%;
-      display: block;
+    a {
+      text-decoration: none;
+      font-size: 18px;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
+
+  .email { color: #d14836; }
+  .linkedin { color: #0074b1; }
+  .dribbble { color: #cc3a70; }
+  .github { color: #7d8082; }
+  .facebook { color: #3b5998; }
 }
